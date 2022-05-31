@@ -22,6 +22,7 @@ def TC1():
 
     results = []
 
+
     driver = webdriver.Chrome("./chromedriver.exe")
 
     url = 'https://explorer.kstadium.io/'

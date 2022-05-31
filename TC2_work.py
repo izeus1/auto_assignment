@@ -17,6 +17,7 @@ def TC2():
 
     driver = webdriver.Chrome("./chromedriver.exe")
 
+
     url = 'https://explorer.kstadium.io/'
     driver.get(url)
 

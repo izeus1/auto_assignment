@@ -20,6 +20,7 @@ TC3_RESULT = "__result3__"
 
 def TC3():
     results = []
+
     each_result = []
 
     driver = webdriver.Chrome("./chromedriver.exe")
