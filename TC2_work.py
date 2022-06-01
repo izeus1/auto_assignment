@@ -38,7 +38,7 @@ def TC2():
                 blockheight_xpath = "//*[@id='root']/div[2]/main/section[2]/div/div[1]/table/tbody/tr[%d]/td[1]/a" % i
                 blockheight_value = driver.find_element(By.XPATH, value=blockheight_xpath).text
 
-                # 스크린 샷
+                # 작업 전 스크린 샷
                 nowtime = datetime.datetime.now()
                 driver.save_screenshot("C:\\Users\지창희\PycharmProjects\pythonProject\Prac_1\__result2__\TC2_capture" + nowtime.strftime('%Y%m%d_%H%M%S') + "_이전" + ".png")
 
@@ -47,7 +47,7 @@ def TC2():
                 url = pre_url + '/txs'
                 driver.get(url)
 
-                # 스크린 샷
+                # 작업 후 스크린 샷
                 time.sleep(2)
                 nowtime = datetime.datetime.now()
                 driver.save_screenshot("C:\\Users\지창희\PycharmProjects\pythonProject\Prac_1\__result2__\TC2_capture" + nowtime.strftime('%Y%m%d_%H%M%S') + "_이후" + ".png")
